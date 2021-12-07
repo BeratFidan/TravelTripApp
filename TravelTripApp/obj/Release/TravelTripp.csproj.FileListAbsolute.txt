@@ -86,3 +86,4 @@ C:\Users\Berat\source\repos\TravelTripApp\TravelTripApp\obj\Release\TravelTripp.
 C:\Users\Berat\source\repos\TravelTripApp\TravelTripApp\obj\Release\TravelTripp.csproj.CopyComplete
 C:\Users\Berat\source\repos\TravelTripApp\TravelTripApp\obj\Release\TravelTripApp.dll
 C:\Users\Berat\source\repos\TravelTripApp\TravelTripApp\obj\Release\TravelTripApp.pdb
+C:\Users\Berat\source\repos\TravelTripApp\TravelTripApp\obj\Release\TravelTripp.csproj.AssemblyReference.cache
