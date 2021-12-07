@@ -170,3 +170,9 @@ C:\Users\Berat\source\repos\SeyahatGeziUygulamasi-master\TravelTripApp\bin\Paged
 C:\Users\Berat\source\repos\SeyahatGeziUygulamasi-master\TravelTripApp\bin\PagedList.Mvc.xml
 C:\Users\Berat\source\repos\SeyahatGeziUygulamasi-master\TravelTripApp\obj\Debug\TravelTripApp.Migrations.yeni.resources
 C:\Users\Berat\source\repos\SeyahatGeziUygulamasi-master\TravelTripApp\obj\Debug\TravelTripp.csproj.GenerateResource.cache
+C:\Users\Berat\source\repos\TravelTripApp\TravelTripApp\bin\PagedList.dll
+C:\Users\Berat\source\repos\TravelTripApp\TravelTripApp\bin\PagedList.Mvc.dll
+C:\Users\Berat\source\repos\TravelTripApp\TravelTripApp\bin\PagedList.xml
+C:\Users\Berat\source\repos\TravelTripApp\TravelTripApp\bin\PagedList.Mvc.xml
+C:\Users\Berat\source\repos\TravelTripApp\TravelTripApp\obj\Debug\TravelTripApp.Migrations.yeni.resources
+C:\Users\Berat\source\repos\TravelTripApp\TravelTripApp\obj\Debug\TravelTripp.csproj.GenerateResource.cache

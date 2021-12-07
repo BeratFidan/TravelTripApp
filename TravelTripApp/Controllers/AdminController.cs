@@ -86,5 +86,18 @@ namespace TravelTripApp.Controllers
             db.SaveChanges();
             return RedirectToAction("YorumlarListe");
         }
+        public ActionResult iletisim(int sayfa=1)
+        {
+            var deger = db.iletisims.ToList().ToPagedList(sayfa, 10);
+            return View(deger);
+        }
+        public ActionResult MesajSil(int id)
+        {
+            var b = db.iletisims.Find(id);
+            db.iletisims.Remove(b);
+            db.SaveChanges();
+            return RedirectToAction("iletisim");
+
+        }
     }
 }

@@ -1,0 +1,77 @@
+﻿@model TravelTripApp.Models.iletisim
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_TestLayout.cshtml";
+}
+
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Free Easy-Trip Website Template | Contact :: w3layouts</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="~/web/css/style.css" type="text/css" media="all" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="~/web/css/slider.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+<body>
+
+    <div class="contact">
+        <div class="wrap">
+            <div class="contact-top">
+                <h3>İletişim Bilgileri</h3>
+            </div>
+            @using (Html.BeginForm("MesajGonder", "iletisim", FormMethod.Post))
+            {<div class="form">
+                    @Html.LabelFor(x => x.AdSoyad)
+                    @Html.TextBoxFor(x => x.AdSoyad, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(x => x.AdSoyad, "", new { @style = "color:red" })
+                    <br />
+                    @Html.LabelFor(x => x.Mail)
+                    @Html.TextBoxFor(x => x.Mail, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(x => x.Mail, "", new { @style = "color:red" })
+                    <br />
+
+                    @Html.LabelFor(x => x.Konu)
+                    @Html.TextBoxFor(x => x.Konu, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(x => x.Konu, "", new { @style = "color:red" })
+                </div>
+                <div class="form1">
+                    <div>
+                        @Html.LabelFor(x => x.Mesaj)
+                        @Html.TextAreaFor(x => x.Mesaj, 15, 1, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(x => x.Mesaj, "", new { @style = "color:red" })
+                    </div>
+                </div>
+
+                <br />
+                <input type="submit" class="read" value="Gönder" />
+            }
+
+</body>
+<div class="clear"></div>
+<div class="contact-bottom">
+    <div class="contact-left">
+        <div class="contact-add">
+            <h3>İletişim bilgilerim aşağıdadır.</h3>
+            <p>Telephone:1-22-5555</p>
+            <p>Fax:1-22-5555</p>
+            <p>Email:<a href="mailto:signup@gmail.com">signup@mail.com</a></p>
+        </div>
+
+    </div>
+    <div class="contact-map">
+        <iframe width="580" height="250" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.co.in/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Rashelle+Way,+San+Ramon,+CA,+United+States&amp;aq=0&amp;oq=rash&amp;sll=44.308127,-111.75293&amp;sspn=22.280521,53.569336&amp;ie=UTF8&amp;hq=&amp;hnear=Rashelle+Way,+San+Ramon,+Contra+Costa,+California+94582,+United+States&amp;ll=37.768294,-121.922369&amp;spn=0.001503,0.00327&amp;t=m&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe><br><small><a href="http://maps.google.co.in/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Rashelle+Way,+San+Ramon,+CA,+United+States&amp;aq=0&amp;oq=rash&amp;sll=44.308127,-111.75293&amp;sspn=22.280521,53.569336&amp;ie=UTF8&amp;hq=&amp;hnear=Rashelle+Way,+San+Ramon,+Contra+Costa,+California+94582,+United+States&amp;ll=37.768294,-121.922369&amp;spn=0.001503,0.00327&amp;t=m&amp;z=14&amp;iwloc=A" style="color: #555;text-align:left">View Larger Map</a></small>
+    </div>
+    <div class="clear"></div>
+</div>
+<div class="clear"></div>
+        </div>
+    </div>
+</body>
+</html>
