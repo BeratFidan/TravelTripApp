@@ -35,6 +35,13 @@ namespace TravelTripApp.Controllers
             return PartialView(by);
            
         }
+        public PartialViewResult Partial2()
+        {
+            var yorumlar = db.Yorumlars.OrderByDescending(x=>x.ID).Take(3).ToList();
+            return PartialView(yorumlar);
+
+        }
+
         [HttpGet]
         public PartialViewResult YorumYap(int id)
         {

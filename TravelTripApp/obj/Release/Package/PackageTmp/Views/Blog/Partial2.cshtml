@@ -1,0 +1,15 @@
+﻿@using TravelTripApp.Models
+@model List<Yorumlar>
+<div class="comments">
+    <h3>Son Yorumlar</h3>
+    @foreach (var item in Model)
+    {
+
+
+        <ul>
+            <li>@item.Yorum.Substring(0,20)...</li>
+
+        </ul>
+    }
+</div>
+<div class="clearfix"></div>
